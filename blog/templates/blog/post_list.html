@@ -3,18 +3,18 @@
 	   <title>Fabii's blog</title>
 	<head>
 	<body>
-
- 	   <h1>Hey, sabia que você é lindo?</h1>
-	   <h2>Sim, te acho surpreendemente maravilhoso e fantástico!</h2>
-	   <div>
-	   <p>Fizemos um mês tem pouco tempo, mas ja parecem uns 5 anos!!</p>
-	   </div>
-	   <br /> 
-	   <p> Esse é meu blog com sua partipação </p>
-	   <br /> <br/>
-	   <p> ass: Olha o nome do blog na aba da página! s2</p>
-
-	   <h1><a href= "http://www.belasfrasesdeamor.com.br/wp-content/uploads/2014/03/aprendi-que-o-amor.jpg"> Clique aqui, seu LINDO!</a></h1>
+	    <div>
+	 	<h1><a href="/">Django Girls Blog</a></h1>
+	    </div>
+	    
+            {% for post in posts %}
+	         <div>
+		    <p> published: {{ post.published_date }} </p>
+		    <h1><a href="">{{ post.title }}</a></h1>
+		    <p>{{ post.text|linebreaksbr }}</p>
+		 </div>
+	    {% endfor%} 
+ 	 
 
 	</body>
 </html>
